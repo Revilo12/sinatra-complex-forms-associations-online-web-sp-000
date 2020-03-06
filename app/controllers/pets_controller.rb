@@ -33,6 +33,5 @@ class PetsController < ApplicationController
       @pet.owner= Owner.create(name: params["owner"]["name"])
     end
     redirect "pets/#{@pet.id}"
-    redirect to "owners/#{@pet.id}"
   end
 end
