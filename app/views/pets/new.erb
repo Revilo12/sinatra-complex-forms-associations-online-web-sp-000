@@ -6,7 +6,7 @@
   <h1>Select Owner</h1>
   <h2>Existing Owner</h2>
   <%@owners.each do |owner| %>
-    <input type='checkbox' id='<%= owner.id %>' name='pets[owner_ids][]' value='<%= owner.id %>'>
+    <input type='checkbox' id='<%= owner.id %>' name='pet[owner_ids][]' value='<%= owner.id %>'>
     <label for='<%= owner.id %>'><%= owner.name %></label>
   <%end%>
 
