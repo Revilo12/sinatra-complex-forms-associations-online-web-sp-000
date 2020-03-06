@@ -6,7 +6,7 @@
   <h1>Select Owner</h1>
   <h2>Existing Owner</h2>
   <%@owners.each do |owner| %>
-    <input type="radio" name="pet[owner_id]" id="<%= owner.id %>" value="<%= owner.id %>" <%='checked' if @owner.owners.include?(owner) %>><%= pet.name %></input><br>
+    <input type="radio" name="pet[owner_id]" id="<%= owner.id %>" value="<%= owner.id %>" <%='checked' if @pet.owner.equal?(owner) %>><%= pet.name %></input><br>
   <%end%>
 
   <h2>New Owner</h2>
